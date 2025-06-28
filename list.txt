@@ -40,6 +40,9 @@ www.youtube.com##ytd-reel-shelf-renderer:has(#title:has-text(/(^| )Shorts.?Remix
 ! Hide shorts category on homepage and search pages
 www.youtube.com##yt-chip-cloud-chip-renderer:has(yt-formatted-string:has-text(/^Shorts$/i))
 
+! NEW 2025 Hide shorts in seach pages desktop without causing loading issues
+youtube.com##grid-shelf-view-model:has-text(Shorts)
+
 !!! MOBILE !!!
 
 ! Hide all videos in home feed containing the phrase "#shorts"
@@ -69,4 +72,8 @@ m.youtube.com##ytm-reel-shelf-renderer:has(.reel-shelf-title-wrapper .yt-core-at
 
 ! Hide shorts category on homepage
 m.youtube.com##ytm-chip-cloud-chip-renderer:has(.yt-core-attributed-string:has-text(/^Shorts$/i))
+
+! NEW 2025 Hide shorts in seach pages mobile without causing loading issues
+m.youtube.com##ytm-reel-shelf-renderer:has-text(Shorts)
+
 
